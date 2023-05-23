@@ -1,2 +1,1 @@
-export * from './user-service.service'
-export * from './post-service.service'
+export * from './car.service'

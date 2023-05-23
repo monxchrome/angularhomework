@@ -1,3 +1,2 @@
-export * from './environments.interface'
-export * from './post.interface'
-export * from './user.interface'
+export * from './environment.interface'
+export * from './cars.interface'
