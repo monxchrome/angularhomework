@@ -12,6 +12,10 @@ import { UsersComponent } from './components/users/users/users.component';
 import { UserComponent } from './components/users/user/user.component';
 import { UserDetailsComponent } from './components/users/user-details/user-details.component';
 import { UserDetailsPageComponent } from './pages/user-details-page/user-details-page.component';
+import { PostDetailsPagComponent } from './pages/post-details-page/post-details-pag.component';
+import { PostsComponent } from './components/posts/posts/posts.component';
+import { PostComponent } from './components/posts/post/post.component';
+import { PostDetailsComponent } from './components/posts/post-details/post-details.component';
 
 const routes: Routes = [
   {path: '', component:MainLayoutComponent, children:[
@@ -19,7 +23,9 @@ const routes: Routes = [
       {path: 'users', component: UserPageComponent, children: [
           {path: ':id', component: UserDetailsPageComponent}
         ]},
-      {path: 'posts', component: PostPageComponent}
+      {path: 'posts', component: PostPageComponent, children: [
+          {path: ':id', component: PostDetailsPagComponent}
+        ]}
     ]}
 ]
 
@@ -34,6 +40,10 @@ const routes: Routes = [
     UserComponent,
     UserDetailsComponent,
     UserDetailsPageComponent,
+    PostDetailsPagComponent,
+    PostsComponent,
+    PostComponent,
+    PostDetailsComponent,
   ],
   imports: [
     BrowserModule,
