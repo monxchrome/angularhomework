@@ -1,0 +1,19 @@
+.tool-bar {
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+}
+
+.links div {
+  padding: 0 1vw;
+}
+
+.links div:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: dodgerblue;
+}

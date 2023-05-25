@@ -1,0 +1,25 @@
+<form [formGroup]="form" (submit)="login()">
+  <mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-error *ngIf="err">Invalid username or password</mat-error>
+    <mat-card-content>
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input type="text" formControlName="username" matInput>
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input type="password" formControlName="password" matInput>
+            <mat-error>This field is required</mat-error>
+          </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="actions">
+      <button mat-stroked-button color="primary">Primary</button>
+    </mat-card-actions>
+  </mat-card>
+</form>
