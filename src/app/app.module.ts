@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
-import {RouterOutlet} from "@angular/router";
 import { MainLayootComponent } from './layouts/main-layoot.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
